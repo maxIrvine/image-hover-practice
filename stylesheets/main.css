@@ -1,0 +1,39 @@
+.image {
+  width: 300px;
+  height: 334px;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 644px;
+  left: 517px;;
+  right: 0px;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 300px;
+  height:0px;
+  transition: .5s ease;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.container:hover .overlay {
+  bottom: 0;
+  height: 100px;
+}
+
+.text {
+  white-space: nowrap; 
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
